@@ -4,7 +4,7 @@ void main(){
   //Named Parameter are used when we need to prevent the error and there are a karge number of parameter.Sequence of variable passed do not matter while calling the function.
   
   printChar("A",c:"C",b:"B");
-  //Optional Parameter Example
+  //Named Parameter Example
   printChar("A",b:"B",c:"C");
 }
 
