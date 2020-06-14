@@ -1,0 +1,32 @@
+void main() {
+  //Whenever we want to use same code in different classes we can use inheritance
+  // Child class inherits all the properties of the Parent Class ai.e. all the variables and functions
+  // Method Overriding - The functions in the child class can be ovrridden which are present in the parent class. Always the priority of variables and functions is given  in the child class
+  
+  var dog = Dog();
+  dog.eat();
+  dog.bark();
+  
+  }
+
+class Animal{
+  String color ="brown";
+  
+  void eat(){
+    print("Animal is Eating");
+  }
+}
+
+class Dog extends  Animal{
+  String colr = "Black";
+  
+  void bark(){
+    print("The Dog is Barking");
+  }
+  
+  void eat(){
+    print("Dog is eating");
+    //super is used to call the parent class function
+    super.eat();
+  }
+}
